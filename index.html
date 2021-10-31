@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- Navbar  -->
-    <nav class="navbar navbar-toggleable navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-toggleable navbar-expand-lg ">
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -51,11 +51,24 @@
         <a href="#perks" class="nav-link" data-toggle="tab">PERKS</a>
       </li>
     </ul>
-<!-- Nav after navigation Bar -->
+    <!-- Nav after navigation Bar -->
     <div class="tab-content">
       <div class="tab-pane active" id="status" role="tab">
+
         <div class="center-image">
-          <img class="status-image" src="images/VaultBoy.png" alt="">
+          <img class="status-image" src="images/VaultBoy.png" alt="" />
+
+          <!-- stats footer -->
+          <div class=" footer">
+            <div class="row">
+              <div class="col-3">HP 50/100</div>
+              <div class="col-6">
+                Level 1
+                <div class="level-progress"></div>
+              </div>
+              <div class="col-3">AP 70/70</div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="tab-pane" id="special" role="tab">Lorem re.</div>
@@ -63,14 +76,10 @@
         Lorem ipsum dolor sit amet conse, labore.
       </div>
     </div>
+
+
     <!-- <navbar class="navbar navbar-expand-lg navbar-light"> -->
-      <div class="row">
-        <div class="col-3">HP 50/100</div>
-        <div class="col-6">Level 1
-          <div class="level-progress"></div>
-        </div>
-        <div class="col-3">AP 70/70</div>
-      </div>
+    
     <!-- </navbar> -->
 
     <script src="js/jquery-3.6.0.min.js"></script>

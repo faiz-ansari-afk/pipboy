@@ -1,3 +1,21 @@
+/* variables */
+:root{
+    --main-color: #14fe17;
+    --background-color: #272b23
+}
+html{
+    /* font-size: 62.5%; */
+}
+body{
+    color: var(--main-color);
+    background-color: var(--background-color);
+}
+
+/* coloring Navbar text */
+ul > li > a{
+    color: var(--main-color);/* I removed navbar-light class from nav to get this color prop*/
+}
+
 /* Status Image */
 .status-image{
     margin: auto;
@@ -7,4 +25,13 @@
     margin-top: 100px;
     /* Making Image Green */
     filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(8) brightness(1) contrast(02);
+}
+
+
+/* Footer */
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 20px);
+    margin: 20px;
 }
