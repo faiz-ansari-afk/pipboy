@@ -1,89 +1,132 @@
 /* variables */
-:root{
-    --main-color: #14fe17;
-    --background-color: #272b23
+:root {
+  --main-color: #14fe17;
+  --background-color: #272b23;
 }
 @font-face {
-    font-family: Pipboy;
-    src: url('../fonts/monofonto.otf');
+  font-family: Pipboy;
+  src: url("../fonts/monofonto.otf");
 }
-body{
-    color: var(--main-color);
-    background-color: var(--background-color);
-    font-family: Pipboy, sans-serif;
+body {
+  color: var(--main-color);
+  background-color: var(--background-color);
+  font-family: Pipboy, sans-serif;
 }
 /* Adding SCANLINE effect❤️ */
-body::after{
-    height: 100%;
-    width: 100%;
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    opacity: 0.3;
-    pointer-events: none;
-    z-index: 10000000;
-    background: repeating-linear-gradient(0deg, rgba(0,0,0,0.5) , rgba(0,0,0,0.4) 1px, transparent 1px,transparent 2px);
+body::after {
+  height: 100%;
+  width: 100%;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 100;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.4) 1px,
+    transparent 1px,
+    transparent 2px
+  );
 }
 
-/* coloring Navbar text */
-ul > li > a{
-    color: var(--main-color);/* I removed navbar-light class from nav to get this color prop*/
-}
-.navbar  ul >li >a{
-    
-    font-size: 32px;
-}
 /* Navbar Customization */
-.navbar{
-    border-bottom: 2px solid var(--main-color);
+.navbar.navbar-light {
+    border-bottom: 2px solid;
     margin: 0px 10px;
 }
-.navbar-nav{
-    width: 100%;
-}
-/* .navbar .navbar-nav > li.nav-item >nav-link{
-    text-align: center; 
-    width: 50%;
-    margin: auto;
-} */
-.navbar >ul > li {
-    width: 50%;
-}
-.navbar::before , .navbar::after {
-    /* little lines at start and end of bottom border */
-    height: 5px;
-    width:5px;
-    content: "|";
+.navbar.navbar-light::before, .navbar.navbar-light::after {
+    height: 7px;
+    width: 2px;
+    content: '';
     position: absolute;
     display: block;
     z-index: 5000;
-    bottom: -2px;
-    color: var(--main-color);
+    background: #14fe17;
+    bottom: -8px;
 }
-.navbar::before{
-    left: -3px;
-    
+
+.navbar::before {
+    left: 0px;
 }
-.navbar::after{
-    right: -1px;
+
+.navbar::after {
+    right: 0px;
 }
-/* Status Image */
-.status-image{
+
+ul > li.nav-item > a.nav-link, ul > li.nav-item.active > a.nav-link {
+    color: #14fe17 !important;
+    font-size: 32px;
+    line-height: 22px;
+    padding-bottom: 0px;
+}
+.nav-item.active::before {
+    left: 0px;
+    border-top: 2px solid;
+    content: '';
+    position: absolute;
+    background: #f00;
+    width: 100%;
+    height: 22px;
+    top: 12px;
+    background: #272b23;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    /* border-bottom: 2px solid; */
+    top: 18px;
+   
+}
+.navbar-light .navbar-nav > li.nav-item > .nav-link,
+.navbar-light .navbar-nav > li.nav-item.active > .nav-link {
+    text-align: center;
+    /* width: 50%; */
     margin: auto;
+    font-size: 32px;
+    line-height: 22px;
+    padding-bottom: 0px;
+    z-index: 50;
+    position: relative;
+    background: #272b23;
+   
+   
+}
+.navbar-nav {
+    width: 100%;
+}
+.navbar-light ul.navbar-nav > li {
     display: block;
     position: relative;
-    max-height: 400px;
-    margin-top: 100px;
-    /* Making Image Green */
-    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(8) brightness(1) contrast(02);
+    width: 100%;
+   
 }
 
+.navbar.navbar-light .navbar-nav {
+    margin: 0px 200px;
+}
+.navbar.navbar-light .navbar-nav > li {
+    padding: 0px 30px;
+}
+
+/* Sub-Navbar */
+
+/* Status Image */
+.status-image {
+  margin: auto;
+  display: block;
+  position: relative;
+  max-height: 400px;
+  margin-top: 100px;
+  /* Making Image Green */
+  filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(8) brightness(1)
+    contrast(02);
+}
 
 /* Footer */
-.footer{
-    position: fixed;
-    bottom: 0;
-    width: calc(100% - 20px);
-    margin: 20px;
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 20px);
+  margin: 20px;
 }
