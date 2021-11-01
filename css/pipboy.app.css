@@ -131,11 +131,17 @@ ul > li.nav-item.active > a.nav-link {
   opacity: 0.3;
 }
 /* Status Image */
-.status-image {
+.center-image{
+  margin: auto;
+  width: 100%;
+  position: absolute;
+}
+.center-image img{
   margin: auto;
   display: block;
   position: relative;
-  max-height: 400px;
+  height: 500px;
+  max-height: 500px; 
   margin-top: 100px;
   /* Making Image Green */
   filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(8) brightness(1)
@@ -144,7 +150,7 @@ ul > li.nav-item.active > a.nav-link {
 
 /* LEVEL Design */
 .level-progress {
-  width: 70%;
+  width: 100%;
   height: 10px;
   border: 2px solid;
   display: inline-block;
@@ -155,12 +161,28 @@ ul > li.nav-item.active > a.nav-link {
   border: 1px solid black;
   border-radius: 5px;
 }
+/* Level progress position around image */
+.stat-bar{
+  width: 60px;
+  margin: auto;
+  margin-bottom: 200px;
+}
+
+.stat-bars{
+  
+}
 /* Footer */
 .footer {
   position: fixed;
   bottom: 0;
   width: calc(100% - 20px);
   margin: 20px;
+  font-size: 27px;
+}
+.footer .level-progress{
+  width: 70%;
+  margin-left: 20px;
+  margin-bottom: 5px;
 }
 .footer .col-3,
 .footer .col-6 {
