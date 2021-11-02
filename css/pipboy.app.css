@@ -131,20 +131,22 @@ ul > li.nav-item.active > a.nav-link {
   opacity: 0.3;
 }
 /* Status Image */
-.center-image{
-  margin: auto;
+.center-image {
+  margin: 30px auto;
+  max-height: 400px;
   width: 100%;
   position: absolute;
 }
-.center-image img{
+.center-image img {
   margin: auto;
   display: block;
+  border-radius: 50%;
+  height: 400px;
   position: relative;
-  height: 500px;
-  max-height: 500px; 
-  margin-top: 100px;
-  /* Making Image Green */
-  filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(8) brightness(1)
+  /* margin-top: 100px; */
+}
+.green-filter {
+  filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(9) brightness(01)
     contrast(02);
 }
 
@@ -162,14 +164,53 @@ ul > li.nav-item.active > a.nav-link {
   border-radius: 5px;
 }
 /* Level progress position around image */
-.stat-bar{
-  width: 60px;
-  margin: auto;
-  margin-bottom: 200px;
+.status-container{
+  position: relative;
+}
+.stat-bar {
+  display: inline-block;
+  width: 50px;
+  margin:auto ;
+  position: absolute;
+}
+.level-one {
+  margin-left: 47.5vw;
+  /* margin-bottom: 20px; */
+}
+.level-two{
+  top: 150px;
+  right: 35vw;
+}
+.level-three{
+  top: 300px;
+  right: 35vw;
+}
+.level-four{
+  top: 440px;
+  left: 47.5vw;
+}
+.level-six{
+  top: 300px;
+  left: 35vw;
+}
+.level-five{
+  top: 150px;
+  left: 35vw;
 }
 
-.stat-bars{
-  
+/* Image below PiPBoy */
+.back-color {
+  background: rgba(16, 255, 0, 0.15);
+}
+.stat-numbers .col-2,
+.stat-numbers .col-1 {
+  margin-right: 5px;
+}
+/* new icon implementation */
+.icon-container{
+  display: grid;
+grid-template-columns: 110px 50px 100px 110px 50px 50px ;
+column-gap: 5px;
 }
 /* Footer */
 .footer {
@@ -179,7 +220,7 @@ ul > li.nav-item.active > a.nav-link {
   margin: 20px;
   font-size: 27px;
 }
-.footer .level-progress{
+.footer .level-progress {
   width: 70%;
   margin-left: 20px;
   margin-bottom: 5px;
@@ -191,4 +232,38 @@ ul > li.nav-item.active > a.nav-link {
 .footer .row .col-6 {
   margin: 0px 8px;
   flex: 0 0 48%;
+}
+
+/* Icon Images */
+.icon , .points{
+  margin-left: 6px;
+}
+.small-text {
+  display: inline-block;
+  font-size: 32px;
+  margin: 10px 0px;
+}
+.large-icons {
+  width: 100px;
+  margin-top: 20px;
+}
+.green-img {
+  filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(55deg)
+    saturate(20);
+}
+.small-icons {
+  width: 40px;
+  margin-top: 10px;
+}
+.helmet-img {
+  margin-top: 8px;
+  margin-left: 7px;
+  width: 100px;
+}
+.gun-img{
+  margin-left: 8px;
+}
+h3 {
+  display: inline-block;
+  margin: 35px auto;
 }
