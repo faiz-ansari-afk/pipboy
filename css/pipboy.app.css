@@ -220,7 +220,7 @@ column-gap: 5px;
   position: fixed;
   bottom: 0;
   width: calc(100% - 20px);
-  margin: 20px;
+  margin: 5px;
   font-size: 27px;
 }
 .footer .level-progress {
@@ -265,9 +265,9 @@ column-gap: 5px;
   margin-left: 8px;
 }
 h3 {
-  position: relative;
-  display: inline-block;
-  margin: auto;
-  top  : 520px;
+  position: absolute;
+  margin-left: 50vw;
+  /* top  : 500px; */
+  bottom: 38px;
   font-size: 24px;
 }
