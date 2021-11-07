@@ -1,9 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <link rel="stylesheet" href="css/tether.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/pipboy.app.css" />
@@ -15,7 +18,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav">
-          <li class="nav-item ">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">STAT</a>
           </li>
 
@@ -37,12 +40,123 @@
         </ul>
       </div>
     </nav>
-    <h1>faiz</h1>
+    <div class="container inv">
+      <div class="row">
+        <div class="col-12 main-col">
+          <ul style="margin-bottom: 5px" class="nav nav-tabs inv-tabs">
+            <li class="nav-items">
+              <a href="#status" class="nav-link" data-toggle="tab" role="tab"
+                >WEAPONS</a
+              >
+            </li>
+            <li class="nav-items">
+              <a href="#special" class="nav-link" data-toggle="tab">ARMOURS</a>
+            </li>
+            <li class="nav-items">
+              <a href="#perks" class="nav-link" data-toggle="tab">AIDS </a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="status" role="tab">
+              <ul class="item-list">
+                <li class="inv-list">
+                  <a class="44_pistol" href="#">.44 Pistol</a>
+                </li>
+
+                <li class="inv-list">
+                  <a class="10mm_pistol" href="#">10mm Pistol</a>
+                </li>
+                <li class="inv-list">
+                  <a class="assault_rifle" href="#">Assault Rifle</a>
+                </li>
+              </ul>
+              <div class="item-stats">
+
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <span class="damage pull-right">56</span>
+                      <span class=" pull-left">Damage</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <span class="fire-rate  pull-right">32</span>
+                      <span class="pull-left">Fire-Rate</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <span class="range pull-right">112</span>
+                      <span class=" pull-left">Range</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <span class="accuracy  pull-right">52</span>
+                      <span class="pull-left">Accuracy</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <span class="weight pull-right">200gm</span>
+                      <span class=" pull-left">Weight</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row-highlight">
+                  <div class="row">
+                    <div class="col-12">
+                      <span class="value pull-right">50$</span>
+                      <span class=" pull-left">Value</span>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+            <div class="tab-pane" id="special" role="tab">Lorem re.</div>
+            <div class="tab-pane" id="perks" role="tab">
+              Lorem ipsum dolor sit amet conse, labore.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="row">
+        <div class="col-3">HP 50/100</div>
+        <div class="col-6">
+          <span>Level 1</span>
+          <div class="level-progress">
+            <div class="level-progress-indicator" style="width: 70%"></div>
+          </div>
+        </div>
+        <div class="col-3 text-right">AP 70/70</div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pipboy.app.js"></script>
   </body>
 </html>

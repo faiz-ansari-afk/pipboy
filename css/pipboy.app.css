@@ -164,36 +164,36 @@ ul > li.nav-item.active > a.nav-link {
   border-radius: 5px;
 }
 /* Level progress position around image */
-.status-container{
+.status-container {
   position: relative;
 }
 .stat-bar {
   display: inline-block;
   width: 50px;
-  margin:auto ;
+  margin: auto;
   position: absolute;
 }
 .level-one {
   margin-left: 34vw;
   /* margin-bottom: 20px; */
 }
-.level-two{
+.level-two {
   top: 100px;
   right: 22vw;
 }
-.level-three{
+.level-three {
   top: 250px;
   right: 22vw;
 }
-.level-four{
-  top:340px;
+.level-four {
+  top: 340px;
   left: 34vw;
 }
-.level-six{
+.level-six {
   top: 250px;
   left: 22vw;
 }
-.level-five{
+.level-five {
   top: 100px;
   left: 22vw;
 }
@@ -207,13 +207,13 @@ ul > li.nav-item.active > a.nav-link {
   margin-right: 5px;
 }
 /* new icon implementation */
-.icon-container{
+.icon-container {
   position: absolute;
   top: 453px;
   left: 25vw;
   display: grid;
-grid-template-columns: 80px 30px 76px 80px 30px 30px ;
-column-gap: 5px;
+  grid-template-columns: 80px 30px 76px 80px 30px 30px;
+  column-gap: 5px;
 }
 /* Footer */
 .footer {
@@ -249,7 +249,7 @@ column-gap: 5px;
 }
 .green-img {
   filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(55deg)
-  saturate(20);
+    saturate(20);
 }
 .small-icons {
   width: 25px;
@@ -260,7 +260,7 @@ column-gap: 5px;
   margin-left: 10px;
   width: 60px;
 }
-.gun-img{
+.gun-img {
   margin-top: 10px;
   margin-left: 8px;
 }
@@ -270,4 +270,56 @@ h3 {
   /* top  : 500px; */
   bottom: 38px;
   font-size: 24px;
+}
+/* Design Inventry List */
+
+.inv-list{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.inv-list a {
+  color: var(--main-color);
+  display: block;
+  width: 300px;
+  padding: 5px 10px;
+  border-radius: 2px;
+  
+}
+.inv-list > a:hover{
+  text-decoration: none;
+  background: var(--main-color);
+  color: var(--background-color);
+
+}
+.inv .item-list{
+  padding: 0px;
+  margin: 0px;
+}
+.inv .nav{
+  margin-bottom: 500px;
+}
+/* positioning STAT list */
+.item-stats{
+  position: absolute;
+  right: 0px;
+  bottom: 50px;
+  width: 300px; 
+  /* margin-bottom: 10px; */
+}
+.row-highlight{
+  margin-bottom: 2.5px;
+  
+  background: rgba(16, 255, 0, 0.15);
+}
+.inv .main-col{
+height: 87vh;}
+
+.pull-left{
+  float: left;
+  padding-left: 10px;
+}
+.pull-right{
+  float: right;
+  padding-right: 10px;
 }
